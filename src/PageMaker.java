@@ -26,7 +26,7 @@ public class PageMaker {
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
-		return "Pagina creada con exito";
+		return "Pagina creada con exito"  + page.toString();
 	}
 
 	}
