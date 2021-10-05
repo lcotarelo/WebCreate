@@ -13,7 +13,7 @@ public class TitleImpl implements ICreable {
 
 	@Override
 	public Title create() {
-		System.out.println("Que vas a escribir en el titulo?");
+		System.out.println("Que vas a escribir en el tag 'title'?");
 		String titulo = sc.nextLine();
 		String headTag = "<head><title>" + titulo + "</title></head>";
 		title.setTitle(headTag);

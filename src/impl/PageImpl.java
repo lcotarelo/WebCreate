@@ -8,12 +8,12 @@ import model.Page;
 public class PageImpl implements ICreable {
 
 	Page page = new Page();
-	Body body = new BodyImpl().create();
 	FileLocation fileLocation = new FileLocationImpl().create();
+	Body body = new BodyImpl().create();
 	@Override
 	public Page create() {
-		page.setBody(body);
 		page.setFileLocation(fileLocation);
+		page.setBody(body);
 		return page;
 	}
 
