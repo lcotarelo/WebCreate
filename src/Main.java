@@ -5,7 +5,6 @@ public class Main {
 	public static void main(String[] args) {
 		SiteImpl si = new SiteImpl();
 		si.create();
-//		/Users/leandrocotarelo/eclipse-workspace/WebCreator
 	}
 
 }

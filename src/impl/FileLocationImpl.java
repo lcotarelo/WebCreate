@@ -10,11 +10,11 @@ public class FileLocationImpl implements IFileLocation {
 
 //	/Users/leandrocotarelo/eclipse-workspace/WebCreator
 	Scanner sc = new Scanner(System.in);
-	FileLocation fileLocation = new FileLocation();
-	static FileName fileName = new FileNameImpl().create();
 
 	@Override
 	public FileLocation create() {
+		FileLocation fileLocation = new FileLocation();
+		FileName fileName = new FileNameImpl().create();
 		System.out.println("Donde vas a guardar el archivo?");
 		String ruta = sc.nextLine();
 		fileLocation.setLocation(ruta + fileName.getFileName());
