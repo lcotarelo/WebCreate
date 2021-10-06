@@ -9,8 +9,6 @@ public class ImagenImpl implements IImagen {
 
 	Scanner sc = new Scanner(System.in);
 	Imagen img = new Imagen();
-//	/Users/leandrocotarelo/Desktop/img.jpeg
-//	/Users/leandrocotarelo/eclipse-workspace/WebCreator/
 
 	@Override
 	public Imagen create() {

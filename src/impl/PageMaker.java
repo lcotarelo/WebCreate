@@ -4,7 +4,6 @@ import java.io.BufferedWriter;
 import java.io.File;
 import java.io.FileWriter;
 
-import impl.PageImpl;
 import model.Page;
 
 public class PageMaker {

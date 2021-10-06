@@ -8,7 +8,6 @@ import model.FileName;
 
 public class FileLocationImpl implements IFileLocation {
 
-//	/Users/leandrocotarelo/eclipse-workspace/WebCreator
 	Scanner sc = new Scanner(System.in);
 
 	@Override
