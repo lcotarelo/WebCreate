@@ -4,6 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
 
+import generics.GenericRunner;
 import interfaces.ISite;
 import model.Page;
 import model.Site;
@@ -13,6 +14,7 @@ public class SiteImpl implements ISite {
 	Site site = new Site();
 	PageMaker pm = new PageMaker();
 	List<Page> paginas = new ArrayList<>();
+	GenericRunner generic = new GenericRunner();
 
 	@Override
 	public Site create() {
@@ -20,8 +22,7 @@ public class SiteImpl implements ISite {
 		Scanner sc = new Scanner(System.in);
 		System.out.println("Cuantas paginas queres");
 		int pagina = sc.nextInt();
-
-//	/Users/leandrocotarelo/eclipse-workspace/WebCreator/
+		// /Users/leandrocotarelo/eclipse-workspace/WebCreator/
 		try {
 			int i;
 			for (i = 0; i < pagina; i++) {

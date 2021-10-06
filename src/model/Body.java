@@ -5,14 +5,15 @@ public class Body {
 	private H1 h1;
 	private Parrafo parrafo;
 	private Imagen imagen;
-	
+
 	public Body() {
 
 	}
 
 	@Override
 	public String toString() {
-		return "<body>"+titulo.getTitle() + h1.getTexto() + parrafo.getContenido() + imagen.getImagenLocation()+"</body>";
+		return "<body>" + titulo.getTitle() + h1.getTexto() + parrafo.getContenido() + imagen.getImagenLocation()
+				+ "</body>";
 	}
 
 	public Body(Title titulo, H1 h1, Parrafo parrafo, Imagen imagen) {

@@ -15,7 +15,6 @@ public class FileNameImpl implements IFileName {
 	public FileName create() {
 		System.out.println("Ingrese el nombre del archivo (Sin la extension)");
 		fileName.setFileName(sc.nextLine() + ".html");
-		System.out.println("file name: " + fileName.getFileName());
 		return fileName;
 	}
 
