@@ -15,6 +15,7 @@ public class ContenidoHTMLImpl {
 		while (respuesta != 3) {
 			System.out.println("Que queres agregar? " + "\n1- Un parrafo" + "\n2- Una imagen" + "\n3- Terminar");
 			respuesta = sc.nextInt();
+			
 			switch (respuesta) {
 			case 1:
 				cuerpo += new ParrafoImpl().create().getContenido();
@@ -22,12 +23,10 @@ public class ContenidoHTMLImpl {
 			case 2:
 				cuerpo += new ImagenImpl().create().getImagenLocation();
 				break;
-			default:
-				System.out.println("Seleccione una opcion valida");
-			}
-		}
 
+			}
+
+		}
 		return cuerpo;
 	}
-
 }

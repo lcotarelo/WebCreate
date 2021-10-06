@@ -20,9 +20,9 @@ public class SiteImpl implements ISite {
 
 		Scanner sc = new Scanner(System.in);
 		System.out.println("Cuantas paginas queres");
-		int pagina = sc.nextInt();
 		// /Users/leandrocotarelo/eclipse-workspace/WebCreator/
 		try {
+			int pagina = sc.nextInt();
 			int i;
 			for (i = 0; i < pagina; i++) {
 				System.out.println("Comienzo de la pagina " + (i + 1));
