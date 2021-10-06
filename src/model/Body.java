@@ -3,25 +3,22 @@ package model;
 public class Body {
 	private Title titulo;
 	private H1 h1;
-	private Parrafo parrafo;
-	private Imagen imagen;
+	private String contenidoHTML;
 
 	public Body() {
 
 	}
 
-	@Override
-	public String toString() {
-		return "<body>" + titulo.getTitle() + h1.getTexto() + parrafo.getContenido() + imagen.getImagenLocation()
-				+ "</body>";
-	}
-
-	public Body(Title titulo, H1 h1, Parrafo parrafo, Imagen imagen) {
+	public Body(Title titulo, H1 h1, String contenidoHTML) {
 		super();
 		this.titulo = titulo;
 		this.h1 = h1;
-		this.parrafo = parrafo;
-		this.imagen = imagen;
+		this.contenidoHTML = contenidoHTML;
+	}
+
+	@Override
+	public String toString() {
+		return "<body>"+titulo.getTitle()+h1.getTexto() + contenidoHTML.toString() + "</body>";
 	}
 
 	public Title getTitulo() {
@@ -40,20 +37,12 @@ public class Body {
 		this.h1 = h1;
 	}
 
-	public Parrafo getParrafo() {
-		return parrafo;
+	public String getContenidoHTML() {
+		return contenidoHTML;
 	}
 
-	public void setParrafo(Parrafo parrafo) {
-		this.parrafo = parrafo;
-	}
-
-	public Imagen getImagen() {
-		return imagen;
-	}
-
-	public void setImagen(Imagen imagen) {
-		this.imagen = imagen;
+	public void setContenidoHTML(String contenidoHTML) {
+		this.contenidoHTML = contenidoHTML;
 	}
 
 }

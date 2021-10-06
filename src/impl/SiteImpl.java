@@ -14,7 +14,6 @@ public class SiteImpl implements ISite {
 	Site site = new Site();
 	PageMaker pm = new PageMaker();
 	List<Page> paginas = new ArrayList<>();
-	GenericRunner generic = new GenericRunner();
 
 	@Override
 	public Site create() {
