@@ -2,10 +2,10 @@ package impl;
 
 import java.util.Scanner;
 
-import interfaces.ICreable;
+import interfaces.IImagen;
 import model.Imagen;
 
-public class ImagenImpl implements ICreable {
+public class ImagenImpl implements IImagen {
 
 	Scanner sc = new Scanner(System.in);
 	Imagen img = new Imagen();

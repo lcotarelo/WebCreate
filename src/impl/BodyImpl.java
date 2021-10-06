@@ -1,14 +1,13 @@
 package impl;
 
-import interfaces.ICreable;
+import interfaces.IBody;
 import model.Body;
-import model.FileLocation;
 import model.H1;
 import model.Imagen;
 import model.Parrafo;
 import model.Title;
 
-public class BodyImpl implements ICreable {
+public class BodyImpl implements IBody {
 
 	Body body = new Body();
 	Title title = new TitleImpl().create();

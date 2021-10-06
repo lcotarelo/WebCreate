@@ -1,11 +1,11 @@
 package impl;
 
-import interfaces.ICreable;
+import interfaces.IPage;
 import model.Body;
 import model.FileLocation;
 import model.Page;
 
-public class PageImpl implements ICreable {
+public class PageImpl implements IPage {
 
 	Page page = new Page();
 	FileLocation fileLocation = new FileLocationImpl().create();

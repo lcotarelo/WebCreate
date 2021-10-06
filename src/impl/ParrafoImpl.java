@@ -2,10 +2,10 @@ package impl;
 
 import java.util.Scanner;
 
-import interfaces.ICreable;
+import interfaces.IParrafo;
 import model.Parrafo;
 
-public class ParrafoImpl implements ICreable {
+public class ParrafoImpl implements IParrafo {
 
 	Scanner sc = new Scanner(System.in);
 	Parrafo parrafo = new Parrafo();

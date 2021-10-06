@@ -2,10 +2,10 @@ package impl;
 
 import java.util.Scanner;
 
-import interfaces.ICreable;
+import interfaces.ITitle;
 import model.Title;
 
-public class TitleImpl implements ICreable {
+public class TitleImpl implements ITitle {
 
 	Scanner sc = new Scanner(System.in);
 	String headTag;

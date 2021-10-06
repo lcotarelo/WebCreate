@@ -2,10 +2,10 @@ package impl;
 
 import java.util.Scanner;
 
-import interfaces.ICreable;
+import interfaces.IH1;
 import model.H1;
 
-public class H1Impl implements ICreable {
+public class H1Impl implements IH1 {
 
 	Scanner sc = new Scanner(System.in);
 	H1 h1 = new H1();

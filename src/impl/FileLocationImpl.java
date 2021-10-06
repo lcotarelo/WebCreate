@@ -2,16 +2,16 @@ package impl;
 
 import java.util.Scanner;
 
-import interfaces.ICreable;
+import interfaces.IFileLocation;
 import model.FileLocation;
 import model.FileName;
 
-public class FileLocationImpl implements ICreable {
+public class FileLocationImpl implements IFileLocation {
 
 //	/Users/leandrocotarelo/eclipse-workspace/WebCreator
 	Scanner sc = new Scanner(System.in);
 	FileLocation fileLocation = new FileLocation();
-	FileName fileName = new FileNameImpl().create();
+	static FileName fileName = new FileNameImpl().create();
 
 	@Override
 	public FileLocation create() {
