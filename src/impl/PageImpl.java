@@ -10,6 +10,7 @@ public class PageImpl implements IPage {
 	Page page = new Page();
 	FileLocation fileLocation = new FileLocationImpl().create();
 	Body body = new BodyImpl().create();
+
 	@Override
 	public Page create() {
 		page.setFileLocation(fileLocation);

@@ -8,11 +8,7 @@ public class ContenidoHTML {
 	public ContenidoHTML() {
 	}
 
-	@Override
-	public String toString() {
-		
-		return "ContenidoHTML [parrafo=" + parrafo + ", imagen=" + imagen + "]";
-	}
+
 
 	public ContenidoHTML(Parrafo parrafo, Imagen imagen) {
 		super();
