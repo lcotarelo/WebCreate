@@ -2,6 +2,7 @@ package impl;
 
 import java.util.Scanner;
 
+import enumerators.Mensajes;
 import interfaces.IFileLocation;
 import model.FileLocation;
 import model.FileName;
@@ -14,7 +15,7 @@ public class FileLocationImpl implements IFileLocation {
 	public FileLocation create() {
 		FileLocation fileLocation = new FileLocation();
 		FileName fileName = new FileNameImpl().create();
-		System.out.println("Donde vas a guardar el archivo?");
+		System.out.println(Mensajes.FILELOCATION.getMensaje());
 		String ruta = sc.nextLine();
 		fileLocation.setLocation(ruta + fileName.getFileName());
 		return fileLocation;

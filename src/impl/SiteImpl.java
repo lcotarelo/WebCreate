@@ -4,6 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
 
+import enumerators.Mensajes;
 import interfaces.ISite;
 import model.Page;
 import model.Site;
@@ -18,14 +19,14 @@ public class SiteImpl implements ISite {
 	public Site create() {
 
 		Scanner sc = new Scanner(System.in);
-		System.out.println("Cuantas paginas queres");
+		System.out.println(Mensajes.SITE_CANTIDAD_DE_PAGINAS.getMensaje());
 		int pagina = sc.nextInt();
 		try {
 			int i;
 			for (i = 0; i < pagina; i++) {
-				System.out.println("Comienzo de la pagina " + (i + 1));
+				System.out.println(Mensajes.SITE_COMIENZO_DE_PAGINA.getMensaje() + (i + 1));
 				Page paginaActual = PageMaker.Maker();
-				System.out.println("Fin de pagina " + (i + 1));
+				System.out.println(Mensajes.SITE_FIN_DE_PAGINA.getMensaje() + (i + 1));
 				paginas.add(paginaActual);
 			}
 			site.setCantidadDePaginas(pagina);

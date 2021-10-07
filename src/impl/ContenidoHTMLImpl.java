@@ -2,6 +2,7 @@ package impl;
 
 import java.util.Scanner;
 
+import enumerators.Mensajes;
 import model.ContenidoHTML;
 
 public class ContenidoHTMLImpl {
@@ -13,7 +14,7 @@ public class ContenidoHTMLImpl {
 		String cuerpo = "";
 		int respuesta = 0;
 		while (respuesta != 3) {
-			System.out.println("Que queres agregar? " + "\n1- Un parrafo" + "\n2- Una imagen" + "\n3- Terminar");
+			System.out.println(Mensajes.CONTENIDOHTLM.getMensaje());
 			respuesta = sc.nextInt();
 			
 			switch (respuesta) {

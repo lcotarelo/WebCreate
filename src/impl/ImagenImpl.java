@@ -2,6 +2,7 @@ package impl;
 
 import java.util.Scanner;
 
+import enumerators.Mensajes;
 import interfaces.IImagen;
 import model.Imagen;
 
@@ -12,9 +13,9 @@ public class ImagenImpl implements IImagen {
 
 	@Override
 	public Imagen create() {
-		System.out.println("Introduzca la ruta absoluta de la imagen: ");
-		String location = "<img src="+sc.nextLine()+" style='width:200px; height: auto'; >";
-		img.setImagenLocation(location);
+		System.out.println(Mensajes.IMAGEN.getMensaje());
+		String imagenUrl = "<img src="+sc.nextLine()+" style='width:200px; height: auto'; >";
+		img.setImagenLocation(imagenUrl);
 		return img;
 	}
 
