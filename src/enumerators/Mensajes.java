@@ -1,11 +1,12 @@
 package enumerators;
 
 public enum Mensajes {
-	CONTENIDOHTLM("Que queres agregar?\n1- Un parrafo\n2- Una imagen\n3- Terminar"),
+	CONTENIDOHTLM("Que queres agregar?\n1- Un parrafo\n2- Una imagen\n3- Un titulo H2\n4- Un titulo H3\n5- Terminar"),
 	FILE_LOCATION("¿Donde vas a guardar el archivo?. "), 
 	FILE_NAME("Ingrese el nombre del archivo (Sin la extension): "),
 	H1("Ingrese el titulo primario (H1): "), 
 	IMAGEN("Introduzca la ruta absoluta de la imagen: "),
+	TAMAÑO_H("Introduzca el titulo (H"),
 	PARRAFO("Ingrese el contenido del parrafo: "), 
 	SITE_CANTIDAD_DE_PAGINAS("¿Cuantas paginas queres?"),
 	SITE_COMIENZO_DE_PAGINA("Comienzo de la pagina "), 
