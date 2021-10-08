@@ -4,6 +4,7 @@ import java.io.BufferedWriter;
 import java.io.File;
 import java.io.FileWriter;
 
+import enumerators.Mensajes;
 import model.Page;
 
 public class PageMaker {
@@ -18,7 +19,9 @@ public class PageMaker {
 			BufferedWriter bw = new BufferedWriter(fw);
 			bw.write(content);
 			bw.close();
-			} catch (Exception e) {
+			} 
+		catch (Exception e) {
+			System.out.println(Mensajes.ARCHIVO_NO_GENERADO);
 			e.printStackTrace();
 		}
 		return page;

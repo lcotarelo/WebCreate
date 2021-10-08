@@ -13,8 +13,9 @@ public class FileNameImpl implements IFileName {
 
 	@Override
 	public FileName create() {
-		System.out.println(Mensajes.FILENAME.getMensaje());
-		fileName.setFileName(sc.nextLine() + ".html");
+		
+		System.out.println(Mensajes.FILE_NAME.getMensaje());
+		fileName.setFileName(sc.nextLine() + Mensajes.FILE_NAME_EXTENSION.getMensaje());
 		return fileName;
 	}
 

@@ -1,10 +1,13 @@
 package impl;
 
 import java.util.ArrayList;
+import java.util.InputMismatchException;
 import java.util.List;
+import java.util.NoSuchElementException;
 import java.util.Scanner;
 
 import enumerators.Mensajes;
+import exceptions.CustomException;
 import interfaces.ISite;
 import model.Page;
 import model.Site;
@@ -20,22 +23,26 @@ public class SiteImpl implements ISite {
 
 		Scanner sc = new Scanner(System.in);
 		System.out.println(Mensajes.SITE_CANTIDAD_DE_PAGINAS.getMensaje());
-		int pagina = sc.nextInt();
 		try {
+			int pagina = sc.nextInt();
 			int i;
 			for (i = 0; i < pagina; i++) {
-				System.out.println(Mensajes.SITE_COMIENZO_DE_PAGINA.getMensaje() + (i + 1));
+				System.out.println(Mensajes.SITE_COMIENZO_DE_PAGINA.getMensaje());
 				Page paginaActual = PageMaker.Maker();
-				System.out.println(Mensajes.SITE_FIN_DE_PAGINA.getMensaje() + (i + 1));
+				System.out.println(Mensajes.SITE_FIN_DE_PAGINA.getMensaje());
 				paginas.add(paginaActual);
 			}
 			site.setCantidadDePaginas(pagina);
-			System.out.println(site.getCantidadDePaginas());
+			System.out.println(Mensajes.PROGRAMA_FINALIZADO_EXITO.getMensaje());
 			site.setPaginas(paginas);
 			return site;
 
+		} catch (InputMismatchException ime) {
+			System.out.println(Mensajes.VALOR_INVALIDO.getMensaje());
+		} catch (NoSuchElementException ns) {
+			System.out.println(Mensajes.CIERRE_POR_EL_USUARIO.getMensaje());
 		} catch (Exception e) {
-			System.out.println("Haz ingresado un caracter no valido. \nFin del programa.");
+			System.out.println(Mensajes.MENSAJE_ERROR_DEFAULT.getMensaje() + e.getMessage());
 		}
 		return null;
 	}

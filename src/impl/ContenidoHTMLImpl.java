@@ -16,7 +16,7 @@ public class ContenidoHTMLImpl {
 		while (respuesta != 3) {
 			System.out.println(Mensajes.CONTENIDOHTLM.getMensaje());
 			respuesta = sc.nextInt();
-			
+
 			switch (respuesta) {
 			case 1:
 				cuerpo += new ParrafoImpl().create().getContenido();

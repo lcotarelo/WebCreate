@@ -15,7 +15,7 @@ public class FileLocationImpl implements IFileLocation {
 	public FileLocation create() {
 		FileLocation fileLocation = new FileLocation();
 		FileName fileName = new FileNameImpl().create();
-		System.out.println(Mensajes.FILELOCATION.getMensaje());
+		System.out.println(Mensajes.FILE_LOCATION.getMensaje());
 		String ruta = sc.nextLine();
 		fileLocation.setLocation(ruta + fileName.getFileName());
 		return fileLocation;
