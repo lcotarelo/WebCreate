@@ -7,7 +7,6 @@ import java.util.NoSuchElementException;
 import java.util.Scanner;
 
 import enumerators.Mensajes;
-import exceptions.CustomException;
 import interfaces.ISite;
 import model.Page;
 import model.Site;
