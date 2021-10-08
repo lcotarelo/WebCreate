@@ -18,7 +18,7 @@ public class Body {
 
 	@Override
 	public String toString() {
-		return "<body>"+titulo.getTitle()+h1.getTexto() + contenidoHTML.toString() + "</body>";
+		return titulo.getTitle() + "<body>" + h1.getTexto() + contenidoHTML.toString() + "</body>";
 	}
 
 	public Title getTitulo() {

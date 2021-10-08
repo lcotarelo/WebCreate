@@ -15,7 +15,7 @@ public class H3 {
 	}
 
 	public void setTexto(String texto) {
-		this.texto = "<h3>"+texto+"</h3>";
+		this.texto = texto;
 	}
 
 }
