@@ -13,7 +13,7 @@ public class ContenidoHTMLImpl {
 	public String create() {
 		String cuerpo = "";
 		int respuesta = 0;
-		int salida = 5;
+		int salida = 9;
 		while (respuesta != salida) {
 			System.out.println(Mensajes.CONTENIDOHTLM.getMensaje());
 			respuesta = sc.nextInt();
@@ -25,12 +25,23 @@ public class ContenidoHTMLImpl {
 				cuerpo += new ImagenImpl().create().getImagenLocation();
 				break;
 			case 3:
-				cuerpo += new IH2Impl().create().getTexto();
+				cuerpo += new H2Impl().create().getTexto();
 				break;
 			case 4:
-				cuerpo += new IH3Impl().create().getTexto();
+				cuerpo += new H3Impl().create().getTexto();
 				break;
-
+			case 5:
+				cuerpo += new H4Impl().create().getTexto();
+				break;
+			case 6:
+				cuerpo += new H5Impl().create().getTexto();
+				break;
+			case 7:
+				cuerpo += new H6Impl().create().getTexto();
+				break;
+			case 8:
+				cuerpo += new ALinkImpl().create().getLink();
+				break;
 			}
 
 		}

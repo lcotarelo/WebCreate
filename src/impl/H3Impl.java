@@ -6,7 +6,7 @@ import enumerators.Mensajes;
 import interfaces.IH3;
 import model.H3;
 
-public class IH3Impl implements IH3 {
+public class H3Impl implements IH3 {
 
 	Scanner sc = new Scanner(System.in);
 	H3 h3 = new H3();

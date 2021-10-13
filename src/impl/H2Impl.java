@@ -6,7 +6,7 @@ import enumerators.Mensajes;
 import interfaces.IH2;
 import model.H2;
 
-public class IH2Impl implements IH2 {
+public class H2Impl implements IH2 {
 
 	Scanner sc = new Scanner(System.in);
 	H2 h2 = new H2();
